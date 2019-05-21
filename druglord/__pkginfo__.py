@@ -2,7 +2,7 @@
 """package info"""
 info = {
     'name': 'DrugLord',
-    'version': '0.1.8',
+    'version': '0.1.9',
     'license': 'MIT',
     'copyright': 'Copyright (c) 2019 Bruno Vaula Werneck '
                  '<brunovaulawerneck@gmail.com>',
