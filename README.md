@@ -27,7 +27,6 @@ It's as simple as installing any other pip package
 $ pip install druglord
 ```
 ### Usage
-Example:
 Create a new project:
 ```bash
 $ mkdir druglord_test
