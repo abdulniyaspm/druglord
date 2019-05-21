@@ -22,21 +22,23 @@ After downloading your driver, extract the contents to any folder and make sure 
 ---
 
 ### Installation
-DrugLord requires BeautifulSoup:
-```bash
-$ pip install beautifulsoup4
-```
-Then, it's as simple as installing any other pip package
+It's as simple as installing any other pip package
 ```bash
 $ pip install druglord
 ```
 ### Usage
 Example:
-
-Create a new file named *druglord.py* and add the following contents:
+Create a new project:
+```bash
+$ mkdir druglord_test
+$ cd druglord_test
+$ python -m venv venv
+$ . ./venv/Scripts/activate
+```
+Create a new file named *search.py* and add the following contents:
 ```python
 import sys
-from druglord.app import DrugLord
+from druglord import DrugLord
 from druglord.browser import Chrome as Browser
 
 
@@ -59,17 +61,16 @@ if __name__ == '__main__':
 ```
 From command-line, you can search for a medicine:
 ```bash
-$ python druglord.py tylex
+$ python search.py tylex
 ```
 You can also search using multiple words:
 ```bash
-$ python druglord.py "Vallium 10mg"
+$ python search.py "Vallium 10mg"
 ```
 ---
 
 ## Todo (Help wanted)
  - Add more tests
- - Fix BeautifulSoup4 SoupSieve dependency
  - Traverse multiple page results
  - i18n
  - Use lxml for faster results
