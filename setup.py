@@ -1,11 +1,12 @@
 import setuptools
+import druglord
 
 with open('README.md', 'r') as fp:
     long_description = fp.read()
 
 setuptools.setup(
     name='Druglord',
-    version='0.1.6',
+    version=druglord.__version__,
     author='Bruno Vaula Werneck',
     author_email='brunovaulawerneck@gmail.com',
     long_description=long_description,
@@ -20,7 +21,6 @@ setuptools.setup(
         'Programming Language :: Python :: 3.7'
     ],
     install_requires=[
-        'soupsieve',
         'beautifulsoup4',
         'requests',
         'selenium'
