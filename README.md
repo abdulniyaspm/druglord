@@ -30,12 +30,7 @@ $ pip install druglord
 ### Usage
 Example:
 
-As a module:
-```bash
-$ python -m druglord ritalin
-```
-
-Or do it yourself. Create a new file named *druglord.py* and add the following contents:
+Create a new file named *druglord.py* and add the following contents:
 ```python
 import sys
 from druglord.app import DrugLord
@@ -75,4 +70,4 @@ $ python druglord.py "Vallium 10mg"
  - Traverse multiple page results
  - i18n
  - Use lxml for faster results
- - Group products by name if similar
+ - Machine learning to identify and group similar products

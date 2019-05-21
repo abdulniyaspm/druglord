@@ -1,28 +1,25 @@
 import setuptools
-import druglord
+from druglord.__pkginfo__ import info
 
 with open('README.md', 'r') as fp:
     long_description = fp.read()
 
 setuptools.setup(
-    name='Druglord',
-    version=druglord.__version__,
-    author='Bruno Vaula Werneck',
-    author_email='brunovaulawerneck@gmail.com',
+    name=info['name'],
+    version=info['version'],
+    author=info['author'],
+    author_email=info['email'],
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/brunowerneck/druglord',
+    url=info['uri'],
     packages=['druglord'],
     include_package_data=True,
-    license='MIT',
-    classifiers=[
-        'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.7'
-    ],
+    license=info['license'],
+    classifiers=info['classifiers'],
     install_requires=[
         'beautifulsoup4',
         'requests',
-        'selenium'
+        'selenium',
+        'soupsieve==1.9.1'
     ]
 )
