@@ -1,11 +1,11 @@
 # Drug Lord
 
-## Simple web scraping system to find best prices for (legal) drugs in Brazilian drugstores.
+## Simple web scraping system to find best prices for medicines in Brazilian drugstores.
 
 ### Requirements
-You **MUST** download at least one webdriver for working with Selenium. Default is Chrome.
+You **MUST** download [Chrome webdriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) for working with DrugLord.
 
-You can find a suitable webdriver for your favorite browser below:
+If you want to implement your solution for another browser, find a suitable webdriver for your favorite browser below:
 
 | Browser | Driver |
 |:--:|:--|
@@ -23,7 +23,6 @@ After downloading your driver, extract the contents to any folder and make sure 
 
 ### Installation
 As simple as installing any other pip package
-
 ```bash
 $ pip install druglord
 ```
@@ -31,13 +30,15 @@ $ pip install druglord
 ### Usage
 Example:
 
-Create a new file named *druglord.py*
+As a module:
+```bash
+$ python -m druglord ritalin
+```
 
-Add the following contents:
-
+Or do it yourself. Create a new file named *druglord.py* and add the following contents:
 ```python
 import sys
-from druglord import DrugLord
+from druglord.app import DrugLord
 from druglord.browser import Chrome as Browser
 
 
@@ -58,24 +59,20 @@ if __name__ == '__main__':
     print(f'\n{len(results)} produtos encontrados '
           f'em {dl.search_time:.2f} segundos')
 ```
-
-From command-line, you can search for a drug:
-
+From command-line, you can search for a medicine:
 ```bash
 $ python druglord.py tylex
 ```
-
 You can also search using multiple words:
-
 ```bash
 $ python druglord.py "Vallium 10mg"
 ```
-
 ---
 
 ## Todo (Help wanted)
  - Add to PiPY
  - Add more tests
  - Traverse multiple page results
+ - i18n
  - Use lxml for faster results
  - Group products by name if similar

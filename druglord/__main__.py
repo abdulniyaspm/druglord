@@ -1,5 +1,5 @@
 import sys
-from druglord import DrugLord
+from druglord.app import DrugLord
 from druglord.browser import Chrome as Browser
 
 
