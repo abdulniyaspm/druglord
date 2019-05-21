@@ -71,6 +71,7 @@ $ python search.py "Vallium 10mg"
 
 ## Todo (Help wanted)
  - Add more tests
+ - Add more drugstores
  - Traverse multiple page results
  - i18n
  - Use lxml for faster results
