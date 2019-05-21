@@ -5,7 +5,7 @@ with open('README.md', 'r') as fp:
 
 setuptools.setup(
     name='Druglord',
-    version='0.1.3',
+    version='0.1.4',
     author='Bruno Vaula Werneck',
     author_email='brunovaulawerneck@gmail.com',
     long_description=long_description,
@@ -20,8 +20,8 @@ setuptools.setup(
         'Programming Language :: Python :: 3.7'
     ],
     install_requires=[
-        'beautifulsoup4==4.7.1',
-        'requests==2.22.0',
-        'selenium==3.141.0'
+        'beautifulsoup4',
+        'requests',
+        'selenium'
     ]
 )
