@@ -22,11 +22,14 @@ After downloading your driver, extract the contents to any folder and make sure 
 ---
 
 ### Installation
-As simple as installing any other pip package
+DrugLord requires BeautifulSoup:
+```bash
+$ pip install beautifulsoup4
+```
+Then, it's as simple as installing any other pip package
 ```bash
 $ pip install druglord
 ```
-
 ### Usage
 Example:
 
@@ -65,8 +68,8 @@ $ python druglord.py "Vallium 10mg"
 ---
 
 ## Todo (Help wanted)
- - Add to PiPY
  - Add more tests
+ - Fix BeautifulSoup4 SoupSieve dependency
  - Traverse multiple page results
  - i18n
  - Use lxml for faster results

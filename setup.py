@@ -17,9 +17,8 @@ setuptools.setup(
     license=info['license'],
     classifiers=info['classifiers'],
     install_requires=[
-        'soupsieve>=1.2',
+        'beautifulsoup4',
         'requests',
-        'selenium',
-        'beautifulsoup4'
+        'selenium'
     ]
 )
