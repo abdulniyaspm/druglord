@@ -14,6 +14,8 @@ class Product:
         )
 
     def __eq__(self, other):
-        return bool(self.supplier == other.supplier and
-                    self.name == other.name and
-                    self.price == other.price)
+        return (
+            self.supplier == other.supplier
+            and self.name == other.name
+            and self.price == other.price
+        )
